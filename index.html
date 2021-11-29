@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en" onClick="jump ()">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Video Game Final Assignment</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Family Font style link -->
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-    </style>
+    <!--Google Font stylesheet link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Animate.css link -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
 
   <body>
-      <h1 class="animate__animated animate__flash">Jump Over The Block</h1>
-      <p class="instructions">To play, left click on the game to jump over the block. Good luck!</p>
-      <h4>Score: <span id="scoreSpan"></span></h4>
-    
+    <h1 class="animate__animated animate__bounceInDown">Jump Over The Block</h1>
+    <p class="instructions">
+      To play, left click on the game to jump over the block. Good luck!
+    </p>
+    <h4>Score: <span id="scoreSpan"></span></h4>
+
     <div class="game">
-      <div id="character">
-        <img src="assets/amongus.gif" width="50px" height="50px" />
-      </div>
+      <div id="character"></div>
       <div id="block"></div>
     </div>
     <script src="script.js"></script>
   </body>
-
 </html>
